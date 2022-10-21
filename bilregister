@@ -25,6 +25,16 @@ class Car():
         '''
         self.brand = new_brand
 
+    def set_color(self,new_color):
+        self.color = new_color
+        
+    def set_milleage(self, new_milleage):
+        self.millage = new_milleage
+
+    def get_milleage(self):
+        return self.millage
+        
+
 
 # ----------Huvudprogram----------
 # Nu när klassen finns kan vi skapa objekt (variabler) med denna typ.
@@ -33,3 +43,6 @@ a_car = Car('Volvo', 'Blå', 1587)
 a_car.get_brand()
 a_car.set_brand('Renault')
 a_car.get_brand()
+a_car.set_milleage(1900)
+the_milleage = a_car.get_milleage ()
+print (the_milleage)
